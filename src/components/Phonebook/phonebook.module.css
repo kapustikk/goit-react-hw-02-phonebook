@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  padding: 20px;
+}
+
+.label {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.input {
+  margin-top: 10px;
+  height: 30px;
+  font-size: 18px;
+}
+
+.button {
+  width: 150px;
+  height: 30px;
+  font-size: 16px;
+  background-color: whitesmoke;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 20px;
+  font-size: 22px;
+}
+
+.allContacts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid gainsboro;
+}

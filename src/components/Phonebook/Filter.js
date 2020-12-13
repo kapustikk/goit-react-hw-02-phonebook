@@ -1,9 +1,17 @@
 import React from 'react';
+import s from './phonebook.module.css';
 
 const Filter = ({ value, onChange }) => (
-  <label>
-    <input type="text" value={value} onChange={onChange} />
-    Find contact by name
-  </label>
+  <form className={s.form}>
+    <label className={s.label}>
+      Find contact by name
+      <input
+        type="text"
+        value={value}
+        onChange={onChange}
+        className={s.input}
+      />
+    </label>
+  </form>
 );
 export default Filter;

@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import s from './phonebook.module.css';
 
 function ContactList({ contacts, onDeleteContact }) {
   return (
-    <ul>
+    <ul className={s.contactList}>
       {contacts.map(({ id, name, number }) => (
-        <li key={id}>
+        <li key={id} className={s.allContacts}>
           <p>
             {name}: {number}
           </p>

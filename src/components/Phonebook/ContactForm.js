@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import s from './phonebook.module.css';
 
 class ContactForm extends Component {
   state = {
@@ -44,26 +45,30 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
+      <form onSubmit={this.handleSubmit} className={s.form}>
+        <label className={s.label}>
           Name
           <input
             type="text"
             name="name"
             value={this.state.name}
             onChange={this.handleChangeName}
+            className={s.input}
           ></input>
         </label>
-        <label>
+        <label className={s.label}>
           Number
           <input
             type="tel"
             name="number"
             value={this.state.number}
             onChange={this.handleChangeNumber}
+            className={s.input}
           ></input>
         </label>
-        <button type="submit">Add contact</button>
+        <button type="submit" className={s.button}>
+          Add contact
+        </button>
       </form>
     );
   }
